@@ -1,11 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Profiling;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] float playerSpeed = 0;
+    public float health { get; set; }
+    [SerializeField] float playerHealth = 2;
     
     float vertical;
 
@@ -16,6 +19,8 @@ public class Player : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         rigidbody.gravityScale = 0;
+
+        health = playerHealth;
     }
 
     private void Update()
@@ -37,4 +42,13 @@ public class Player : MonoBehaviour
     {
         rigidbody.velocity = new Vector2(0f, vertical * playerSpeed);
     }
+
+    public void ResetPlayer()
+    {
+        this.transform.position = new Vector2(-13, 0);
+
+        this.health = health;
+    }
+
 }
+

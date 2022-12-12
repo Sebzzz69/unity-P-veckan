@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 42485588}
   m_Layer: 0
   m_Name: Cubes
-  m_TagString: Walls
+  m_TagString: Obstecle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 268058444}
   m_Layer: 0
   m_Name: Cubes
-  m_TagString: Walls
+  m_TagString: Obstecle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -344,7 +344,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268058441}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.73, y: 4.88, z: 0}
+  m_LocalPosition: {x: 12.84, y: 4.88, z: 0}
   m_LocalScale: {x: 1, y: 5.971144, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -424,7 +424,7 @@ GameObject:
   - component: {fileID: 448112191}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -510,6 +510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 35
+  playerHealth: 2
 --- !u!50 &448112189
 Rigidbody2D:
   serializedVersion: 4
@@ -530,7 +531,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!61 &448112190
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -544,7 +545,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.009398341, y: 0.42289448}
+  m_Offset: {x: -0.33688575, y: 0.42289448}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -555,7 +556,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.266535, y: 2.334467}
+  m_Size: {x: 4.5739665, y: 2.334467}
   m_EdgeRadius: 0
 --- !u!114 &448112191
 MonoBehaviour:
@@ -846,7 +847,7 @@ GameObject:
   - component: {fileID: 1574123236}
   m_Layer: 0
   m_Name: Cubes
-  m_TagString: Walls
+  m_TagString: Obstecle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
