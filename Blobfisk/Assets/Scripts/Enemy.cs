@@ -8,6 +8,8 @@ public class Enemy : MonoBehaviour
 {
 
     [SerializeField] float enemySpeed;
+    [SerializeField] float maxSpeed = 10;
+    [SerializeField] float minSpeed = 4;
     public float health { get; private set; }
 
     public int hitPoints { get; private set; }
@@ -24,7 +26,8 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-        
+
+        enemySpeed = Random.Range(minSpeed, maxSpeed);
     }
 
     private void Update()
@@ -34,7 +37,18 @@ public class Enemy : MonoBehaviour
 
     private void MoveEnemy()
     {
-        transform.position += transform.up * enemySpeed * Time.deltaTime;
+        //transform.position += transform.up * enemySpeed * Time.deltaTime;
+        rigidbody.velocity = new Vector2(0f, enemySpeed);
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Walls"))
+        {
+            //enemySpeed = Random.Range(minSpeed, maxSpeed);
+            enemySpeed = -enemySpeed;
+        }
     }
 
 }
