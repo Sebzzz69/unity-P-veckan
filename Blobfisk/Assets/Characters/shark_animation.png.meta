@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4192181593435254797d777192738d64
+guid: d8a19084331cd8e419a1ffa1bc1e1e03
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -103,7 +103,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: shark_animation_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 111
+        width: 483
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc9ddf435fb2084d854b7e94cfca08d
+      internalID: 421845070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_animation_1
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 122
+        width: 498
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e099ab890022f074eadfacf299ac4467
+      internalID: 1032464585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +156,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shark_animation_1: 1032464585
+      shark_animation_0: 421845070
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

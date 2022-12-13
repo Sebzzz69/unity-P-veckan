@@ -48,7 +48,7 @@ public class Bullet : MonoBehaviour
         Player player = collision.gameObject.GetComponent<Player>();
         if (player != null)
         {
-            FindObjectOfType<GameManager>().PlayerHit(player, enemy);
+            FindObjectOfType<GameManager>().PlayerHit(player);
             DestroyBullet();
         }
 

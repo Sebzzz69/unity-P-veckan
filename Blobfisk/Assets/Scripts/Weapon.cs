@@ -8,11 +8,10 @@ public class Weapon : MonoBehaviour
     public GameObject bulletPrefab;
 
     [SerializeField] int bulletsLeft = 30;
-    public KeyCode shootKey = KeyCode.None;
 
     private void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if (bulletsLeft >= 0)
             {

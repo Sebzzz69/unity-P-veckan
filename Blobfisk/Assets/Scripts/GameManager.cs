@@ -12,10 +12,13 @@ public class GameManager : MonoBehaviour
 
    // float playerHealth;
     [SerializeField] float score;
+    int level = 1;
 
      Player player;
     public Bullet bullet { get; private set; }
     public Enemy enemy { get; private set; }
+
+    SceneHandler nextScene;
 
     // UI Text Objects
     [Header("Text Objects")]
@@ -42,18 +45,28 @@ public class GameManager : MonoBehaviour
        // healthTxt.text = $"Health:" + player.health;
         scoreTxt.text = $"Score: {score}";
 
-       // NewGame();
+        NewGame();
     }
 
     private void Update()
     {
 
         scoreTxt.text = $"Score: {score}";
-        
-
-        if (score >= 30)
+        if (score >= 60)
         {
-            // Next level or you win idk yet
+            level++;
+            if (level >= 6)
+            {
+                SceneManager.LoadScene("WinScreen");
+            }
+            else
+            {
+                SceneManager.LoadScene($"Level{level}");
+            }
+           
+            NewGame();
+
+
         }
     }
 
@@ -71,7 +84,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void PlayerHit(Player player, Enemy enemy)
+    public void PlayerHit(Player player)
     {
         Debug.Log("Player Hit");
         player.health--;
@@ -87,22 +100,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void NewGame()
+    {
+        score = 0;
+       /* player.ResetPlayer();
+        enemy.ResetEnemy();*/
+    }
+
     /*private void GameOver()
     {
         ResetLevel(player, enemy);
         score = 0;
-    }
-
-    private void ResetLevel(Player player, Enemy enemy)
-    {
-        
     }*/
-
-   /* private void OnLevelLoaded(Scene scene, LoadSceneMode mode)
-    {
-        this.enemy = FindObjectOfType<Enemy>();
-        this.player = FindObjectOfType<Player>();
-    }*/
-
 
 }

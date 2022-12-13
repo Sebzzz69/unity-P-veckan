@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4192181593435254797d777192738d64
+guid: 057d4c4f0ea85224d932ea7e18caaa3f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -103,7 +103,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: blasfisk_animation_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 395
+        width: 647
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf1f9ca6ffdcb9143a718d1bc620fda9
+      internalID: -1039563960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blasfisk_animation_1
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 270
+        width: 855
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f8cc13151578f4581a5131bb7b454d
+      internalID: 1331555085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blasfisk_animation_2
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 41
+        width: 1318
+        height: 1279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8899743fb3bb2804fa51b4039a4a0d00
+      internalID: 1617145105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blasfisk_animation_3
+      rect:
+        serializedVersion: 2
+        x: 3298
+        y: 270
+        width: 855
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a305b6db5cbef064f96264339e556cfc
+      internalID: 122791981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +198,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blasfisk_animation_3: 122791981
+      blasfisk_animation_2: 1617145105
+      blasfisk_animation_1: 1331555085
+      blasfisk_animation_0: -1039563960
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
