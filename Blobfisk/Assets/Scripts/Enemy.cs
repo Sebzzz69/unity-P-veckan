@@ -10,11 +10,12 @@ public class Enemy : MonoBehaviour
     [SerializeField] float enemySpeed;
     [SerializeField] float maxSpeed = 10;
     [SerializeField] float minSpeed = 4;
+    [SerializeField] float enemyHealth = 20;
     public float health { get; set; }
-    [SerializeField] float enemyHealth = 10;
 
-    public int hitPoints { get; private set; }
-    public int killPoints { get; private set; }
+
+    public int hitPoints { get; private set; } = 5;
+    public int killPoints { get; private set; } = 15;
 
     Vector2 movement;
     Rigidbody2D rigidbody;

@@ -24,28 +24,35 @@ public class Bullet : MonoBehaviour
 
     private void DestroyBullet()
     {
-        Destroy(this.gameObject);
+        if (this != null)
+            Destroy(this.gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            FindObjectOfType<GameManager>().PlayerHit(FindObjectOfType<Player>());
-            DestroyBullet();
-        }
-        else if (collision.gameObject.CompareTag("Enemy"))
-        {
-            FindObjectOfType<GameManager>().EnemyHit(FindObjectOfType<Enemy>());
-            DestroyBullet();
-        }
-        else if (collision.gameObject.CompareTag("Obstecle"))
+        if (collision.gameObject.CompareTag("Obstecle"))
         {
             rigidbody.velocity = -transform.right * speed;
         }
-        else
+        if (collision.gameObject.CompareTag("Bullet"))
         {
             DestroyBullet();
         }
+
+        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+        if (enemy != null)
+        {
+            FindObjectOfType<GameManager>().EnemyHit(enemy);
+            DestroyBullet();
+        }
+        Player player = collision.gameObject.GetComponent<Player>();
+        if (player != null)
+        {
+            FindObjectOfType<GameManager>().PlayerHit(player, enemy);
+            DestroyBullet();
+        }
+
+
+
     }
 }
