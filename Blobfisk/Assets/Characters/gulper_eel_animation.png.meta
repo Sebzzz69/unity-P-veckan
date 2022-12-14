@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c29981c754536fa45add44717ffc1de7
+guid: c50cdadbd2c317d48802e2631ab7f0f5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blobfisk_w_gun_animation_0
+      name: gulper_eel_animation_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 111
-        width: 258
-        height: 117
+        x: 23
+        y: 86
+        width: 613
+        height: 330
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 492ec79200f8f20469c3471eaae6edab
-      internalID: -144541168
+      spriteID: c8fba02757ce4ec4eb1eba5670829333
+      internalID: 847086824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blobfisk_w_gun_animation_1
+      name: gulper_eel_animation_1
       rect:
         serializedVersion: 2
-        x: 299
-        y: 111
-        width: 252
-        height: 115
+        x: 635
+        y: 86
+        width: 615
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5feed41190633b74491d2bd76cb55010
-      internalID: -957812902
+      spriteID: 1e10074ac048885418a7bbe6b4ffabbb
+      internalID: -418298569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gulper_eel_animation_2
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 405
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6117ae55d8453ce4b926dd5b6cde062f
+      internalID: -1007871302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gulper_eel_animation_3
+      rect:
+        serializedVersion: 2
+        x: 2103
+        y: 86
+        width: 615
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac234123d9506944fa84452fbd052d0d
+      internalID: -1203244137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gulper_eel_animation_4
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 90
+        width: 626
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efcf28ef3c3d7f84f9950f4c479760f5
+      internalID: 934688402
       vertices: []
       indices: 
       edges: []
@@ -157,8 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Blobfisk_w_gun_animation_0: -144541168
-      Blobfisk_w_gun_animation_1: -957812902
+      gulper_eel_animation_1: -418298569
+      gulper_eel_animation_4: 934688402
+      gulper_eel_animation_2: -1007871302
+      gulper_eel_animation_3: -1203244137
+      gulper_eel_animation_0: 847086824
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
+//using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Scripting;
 
@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour
     public Rigidbody2D rigidbody;
 
     Player player;
+    SpriteRenderer spriteRenderer;
 
 
     private void Awake()
@@ -33,6 +34,12 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstecle"))
         {
             rigidbody.velocity = -transform.right * speed;
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.flipX = true;
+            }
+            
+            
         }
         if (collision.gameObject.CompareTag("Bullet"))
         {

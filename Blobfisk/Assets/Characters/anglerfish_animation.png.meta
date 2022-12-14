@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c29981c754536fa45add44717ffc1de7
+guid: 78f827ef11d299c4e8103d827296bf4e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blobfisk_w_gun_animation_0
+      name: anglerfish_animation_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 111
-        width: 258
-        height: 117
+        x: 139
+        y: 72
+        width: 1772
+        height: 834
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 492ec79200f8f20469c3471eaae6edab
-      internalID: -144541168
+      spriteID: 689228bbc705bb14a98cb8217199f001
+      internalID: 131077703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blobfisk_w_gun_animation_1
+      name: anglerfish_animation_1
       rect:
         serializedVersion: 2
-        x: 299
-        y: 111
-        width: 252
-        height: 115
+        x: 1905
+        y: 72
+        width: 1763
+        height: 807
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5feed41190633b74491d2bd76cb55010
-      internalID: -957812902
+      spriteID: 169ba8e7c18c54d43a599dbbffaf7f6e
+      internalID: 1676203769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglerfish_animation_2
+      rect:
+        serializedVersion: 2
+        x: 3807
+        y: 91
+        width: 1763
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70269f7c39fd2e54092bdcb67328374c
+      internalID: -1527357201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglerfish_animation_3
+      rect:
+        serializedVersion: 2
+        x: 5706
+        y: 99
+        width: 1768
+        height: 807
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73343377fd2fce7478e0d047721a47e5
+      internalID: 570520704
       vertices: []
       indices: 
       edges: []
@@ -157,8 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Blobfisk_w_gun_animation_0: -144541168
-      Blobfisk_w_gun_animation_1: -957812902
+      anglerfish_animation_3: 570520704
+      anglerfish_animation_2: -1527357201
+      anglerfish_animation_1: 1676203769
+      anglerfish_animation_0: 131077703
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

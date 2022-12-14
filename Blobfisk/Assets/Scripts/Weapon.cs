@@ -7,8 +7,14 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
 
-    [SerializeField] int bulletsLeft = 30;
+    [SerializeField] int bulletsLeft;
+    [SerializeField] int bullets = 30;
 
+
+    private void Start()
+    {
+        bulletsLeft = bullets;
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -23,7 +29,12 @@ public class Weapon : MonoBehaviour
     private void Shoot()
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        bulletsLeft--;
+       // bulletsLeft--;
     }
 
+    /*public void ReloadGun()
+    {
+        bulletsLeft = bullets;
+    }
+*/
 }

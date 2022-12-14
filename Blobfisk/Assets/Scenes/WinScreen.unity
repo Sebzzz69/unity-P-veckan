@@ -289,6 +289,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 35
   playerHealth: 2
+  sprites: []
+  spriteRenderer: {fileID: 0}
 --- !u!50 &448112189
 Rigidbody2D:
   serializedVersion: 4
@@ -350,7 +352,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 289814154}
   bulletPrefab: {fileID: 8679197705551948222, guid: 8f206e3865f39b14aadeca585cbb49e8, type: 3}
-  bulletsLeft: 30
+  bulletsLeft: 10000
+  bullets: 30
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

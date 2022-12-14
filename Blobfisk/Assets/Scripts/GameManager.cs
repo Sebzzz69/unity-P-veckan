@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour
 
     SceneHandler nextScene;
 
+    string currentSceneName;
+    Scene curretScene;
+
     // UI Text Objects
     [Header("Text Objects")]
     public GameObject textMeshProScore;
@@ -28,22 +31,25 @@ public class GameManager : MonoBehaviour
     TextMeshProUGUI scoreTxt;
     TextMeshProUGUI healthTxt;
 
+    Weapon weapon;
+
     private void Awake()
     {
             DontDestroyOnLoad(this);
 
-        //SceneManager.sceneLoaded += OnLevelLoaded;
+        // UI Text
+        scoreTxt = textMeshProScore.GetComponent<TextMeshProUGUI>();
+        healthTxt = textMeshProHealth.GetComponent<TextMeshProUGUI>();
     }
 
     private void Start()
     {
-        // UI Text
-        scoreTxt = textMeshProScore.GetComponent<TextMeshProUGUI>();
-        healthTxt = textMeshProHealth.GetComponent<TextMeshProUGUI>();
 
         //Player player;
        // healthTxt.text = $"Health:" + player.health;
         scoreTxt.text = $"Score: {score}";
+
+       // SceneManager.LoadScene("MainMenu");
 
         NewGame();
     }
@@ -52,22 +58,28 @@ public class GameManager : MonoBehaviour
     {
 
         scoreTxt.text = $"Score: {score}";
-        if (score >= 60)
+        curretScene = SceneManager.GetActiveScene();
+        currentSceneName = curretScene.name;
+        /*if (currentSceneName == $"Level{level}")
         {
-            level++;
-            if (level >= 6)
+        }*/
+            if (score >= 60)
             {
-                SceneManager.LoadScene("WinScreen");
-            }
-            else
-            {
-                SceneManager.LoadScene($"Level{level}");
-            }
-           
-            NewGame();
+                level++;
+                if (level >= 6)
+                {
+                    SceneManager.LoadScene("WinScreen");
+                }
+                else
+                {
+                    SceneManager.LoadScene($"Level{level}");
+                }
+
+                NewGame();
 
 
-        }
+            }
+        
     }
 
     public void EnemyHit(Enemy enemy)
@@ -112,5 +124,7 @@ public class GameManager : MonoBehaviour
         ResetLevel(player, enemy);
         score = 0;
     }*/
+
+    
 
 }
