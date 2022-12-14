@@ -105,8 +105,8 @@ public class GameManager : MonoBehaviour
 
         if (player.health <= 0)
         {
-            player.ResetPlayer();
-            score = 0;
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(scene.name);
 
 
         }
