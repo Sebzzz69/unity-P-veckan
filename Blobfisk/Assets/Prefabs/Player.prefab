@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -144541168, guid: c29981c754536fa45add44717ffc1de7, type: 3}
+  m_Sprite: {fileID: 1823161446, guid: d5be0d058275b594882738e3a0b27bcd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -151,8 +151,8 @@ MonoBehaviour:
   playerSpeed: 35
   playerHealth: 2
   sprites:
-  - {fileID: -144541168, guid: c29981c754536fa45add44717ffc1de7, type: 3}
-  - {fileID: -957812902, guid: c29981c754536fa45add44717ffc1de7, type: 3}
+  - {fileID: 1823161446, guid: d5be0d058275b594882738e3a0b27bcd, type: 3}
+  - {fileID: 1184063600, guid: d5be0d058275b594882738e3a0b27bcd, type: 3}
   spriteRenderer: {fileID: 0}
 --- !u!114 &4238462475942955570
 MonoBehaviour:

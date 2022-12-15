@@ -29,12 +29,6 @@ public class Weapon : MonoBehaviour
     private void Shoot()
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-       // bulletsLeft--;
     }
 
-    /*public void ReloadGun()
-    {
-        bulletsLeft = bullets;
-    }
-*/
 }

@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] float enemySpeed;
     [SerializeField] float maxSpeed = 10;
     [SerializeField] float minSpeed = 4;
-    [SerializeField] float enemyHealth = 20;
+    [SerializeField] int enemyHealth = 20;
     public float health { get; set; }
 
 
@@ -42,7 +42,6 @@ public class Enemy : MonoBehaviour
 
     private void MoveEnemy()
     {
-        //transform.position += transform.up * enemySpeed * Time.deltaTime;
         rigidbody.velocity = new Vector2(0f, enemySpeed);
         
     }
@@ -62,5 +61,6 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
             enemySpeed = -enemySpeed;
     }
+
 
 }

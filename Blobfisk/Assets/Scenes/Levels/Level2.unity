@@ -142,6 +142,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7075472
       objectReference: {fileID: 0}
+    - target: {fileID: 6064386779241036434, guid: e759c8c8a680ee64b916317fc5b2e5e1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6064386779241036434, guid: e759c8c8a680ee64b916317fc5b2e5e1, type: 3}
+      propertyPath: enemyHealth
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6064386779241036435, guid: e759c8c8a680ee64b916317fc5b2e5e1, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -230,6 +238,10 @@ PrefabInstance:
     - target: {fileID: 8068166674190046040, guid: cbe14d21bb9df7649837d1a039e822a9, type: 3}
       propertyPath: m_Name
       value: Obstacle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068166674190046040, guid: cbe14d21bb9df7649837d1a039e822a9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8068166674190046042, guid: cbe14d21bb9df7649837d1a039e822a9, type: 3}
       propertyPath: m_RootOrder
@@ -388,6 +400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8068166674190046040, guid: cbe14d21bb9df7649837d1a039e822a9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8068166674190046042, guid: cbe14d21bb9df7649837d1a039e822a9, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -461,6 +477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8068166674190046040, guid: cbe14d21bb9df7649837d1a039e822a9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8068166674190046042, guid: cbe14d21bb9df7649837d1a039e822a9, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -533,6 +553,10 @@ PrefabInstance:
     - target: {fileID: 8068166674190046040, guid: cbe14d21bb9df7649837d1a039e822a9, type: 3}
       propertyPath: m_Name
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068166674190046040, guid: cbe14d21bb9df7649837d1a039e822a9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8068166674190046042, guid: cbe14d21bb9df7649837d1a039e822a9, type: 3}
       propertyPath: m_RootOrder
@@ -667,6 +691,10 @@ PrefabInstance:
     - target: {fileID: 6064386779241036432, guid: 4fdaf3d375696d84dbd952730890c552, type: 3}
       propertyPath: m_Color.r
       value: 0.7075472
+      objectReference: {fileID: 0}
+    - target: {fileID: 6064386779241036434, guid: 4fdaf3d375696d84dbd952730890c552, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6064386779241036435, guid: 4fdaf3d375696d84dbd952730890c552, type: 3}
       propertyPath: m_RootOrder
@@ -1007,6 +1035,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7075472
       objectReference: {fileID: 0}
+    - target: {fileID: 6064386779241036434, guid: b12f8b56607341f4b951d9c3130454bf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6064386779241036434, guid: b12f8b56607341f4b951d9c3130454bf, type: 3}
+      propertyPath: enemyHealth
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6064386779241036435, guid: b12f8b56607341f4b951d9c3130454bf, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1095,6 +1131,10 @@ PrefabInstance:
     - target: {fileID: 8068166674190046040, guid: cbe14d21bb9df7649837d1a039e822a9, type: 3}
       propertyPath: m_Name
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068166674190046040, guid: cbe14d21bb9df7649837d1a039e822a9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8068166674190046042, guid: cbe14d21bb9df7649837d1a039e822a9, type: 3}
       propertyPath: m_RootOrder

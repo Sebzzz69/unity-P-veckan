@@ -10,13 +10,21 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 
-   // float playerHealth;
+   /*
+    *  
+    *  - bullets gettings stuck in the air 
+    *   when hitting an obstacle after bocuing back on obstacle before
+   */
+
+
     [SerializeField] float score;
     int level = 1;
 
      Player player;
     public Bullet bullet { get; private set; }
     public Enemy enemy { get; private set; }
+
+    Enemy enemyEnemy;
 
     SceneHandler nextScene;
 
@@ -25,28 +33,26 @@ public class GameManager : MonoBehaviour
 
     // UI Text Objects
     [Header("Text Objects")]
-  //  public GameObject textMeshProScore;
-   // public GameObject textMeshProHealth;
-
+    //public GameObject textMeshProScore;
     TextMeshProUGUI scoreTxt;
-    TextMeshProUGUI healthTxt;
-
+    
     Weapon weapon;
 
     private void Awake()
     {
-            DontDestroyOnLoad(this);
+
+        IfMoreGameManagers();
+          //  DontDestroyOnLoad(this);
 
         // UI Text
         //scoreTxt = textMeshProScore.GetComponent<TextMeshProUGUI>();
-        //healthTxt = textMeshProHealth.GetComponent<TextMeshProUGUI>();
+        
     }
 
     private void Start()
     {
 
         //Player player;
-       // healthTxt.text = $"Health:" + player.health;
         //scoreTxt.text = $"Score: {score}";
 
        // SceneManager.LoadScene("MainMenu");
@@ -60,13 +66,10 @@ public class GameManager : MonoBehaviour
         //scoreTxt.text = $"Score: {score}";
         curretScene = SceneManager.GetActiveScene();
         currentSceneName = curretScene.name;
-        /*if (currentSceneName == $"Level{level}")
-        {
-        }*/
-            if (score >= 60)
+            if (score >= 55)
             {
                 level++;
-                if (level >= 6)
+                if (level >= 4)
                 {
                     SceneManager.LoadScene("WinScreen");
                 }
@@ -83,8 +86,29 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.H))
         {
             SceneManager.LoadScene("MainMenu");
+            score = 0;
         }
-        
+
+        // Cheat
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            SceneManager.LoadScene($"Level{level + 1}");
+            level++;
+        }
+
+    }
+
+    private void IfMoreGameManagers()
+    {
+        int numGameManagers = FindObjectsOfType<GameManager>().Length;
+        if (numGameManagers != 1)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(this.gameObject);
+        }
     }
 
     public void EnemyHit(Enemy enemy)
@@ -105,12 +129,13 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Player Hit");
         player.health--;
-       // healthTxt.text = $"Health: {player.health}";
 
 
         if (player.health <= 0)
         {
             SceneManager.LoadScene("Level1");
+            score = 0;
+            level = 1;
 
 
         }
@@ -122,12 +147,6 @@ public class GameManager : MonoBehaviour
        /* player.ResetPlayer();
         enemy.ResetEnemy();*/
     }
-
-    /*private void GameOver()
-    {
-        ResetLevel(player, enemy);
-        score = 0;
-    }*/
 
     
 

@@ -48,7 +48,6 @@ public class HandleObstacle : MonoBehaviour
         speed = Random.Range(minSpeed, maxHeight);
         height = Random.Range(minHeight, maxHeight);
 
-      // transform.localScale = new Vector2(0f, height);
         gameObject.transform.localScale = new Vector2(0.5f, height);
     }
 

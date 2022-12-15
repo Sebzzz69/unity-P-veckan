@@ -23,6 +23,7 @@ public class Bullet : MonoBehaviour
     }
 
 
+
     private void DestroyBullet()
     {
         if (this != null)
@@ -33,15 +34,22 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstecle"))
         {
-            rigidbody.velocity = -transform.right * speed;
+            rigidbody.velocity = (transform.right * -1) * speed;
+            
             if (spriteRenderer != null)
             {
                 spriteRenderer.flipX = true;
             }
-            
-            
+
+
         }
-        if (collision.gameObject.CompareTag("Bullet"))
+        else if (collision.gameObject.CompareTag("Walls"))
+        {
+            DestroyBullet();
+        }
+
+
+        else if (collision.gameObject.CompareTag("Bullet"))
         {
             DestroyBullet();
         }
@@ -52,12 +60,15 @@ public class Bullet : MonoBehaviour
             FindObjectOfType<GameManager>().EnemyHit(enemy);
             DestroyBullet();
         }
+
         Player player = collision.gameObject.GetComponent<Player>();
         if (player != null)
         {
             FindObjectOfType<GameManager>().PlayerHit(player);
             DestroyBullet();
         }
+
+
 
 
 
