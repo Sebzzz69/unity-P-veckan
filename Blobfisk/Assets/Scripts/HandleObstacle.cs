@@ -58,6 +58,10 @@ public class HandleObstacle : MonoBehaviour
         {
             speed = -speed;
         }
+        else if (collision.gameObject.CompareTag("Obstecle"))
+        {
+            speed = -speed;
+        }
         
     }
 

@@ -59,6 +59,8 @@ public class Enemy : MonoBehaviour
             //enemySpeed = Random.Range(minSpeed, maxSpeed);
             enemySpeed = -enemySpeed;
         }
+        if (collision.gameObject.CompareTag("Enemy"))
+            enemySpeed = -enemySpeed;
     }
 
 }

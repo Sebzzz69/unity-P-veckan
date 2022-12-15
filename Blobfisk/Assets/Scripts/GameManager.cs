@@ -25,8 +25,8 @@ public class GameManager : MonoBehaviour
 
     // UI Text Objects
     [Header("Text Objects")]
-    public GameObject textMeshProScore;
-    public GameObject textMeshProHealth;
+  //  public GameObject textMeshProScore;
+   // public GameObject textMeshProHealth;
 
     TextMeshProUGUI scoreTxt;
     TextMeshProUGUI healthTxt;
@@ -38,8 +38,8 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(this);
 
         // UI Text
-        scoreTxt = textMeshProScore.GetComponent<TextMeshProUGUI>();
-        healthTxt = textMeshProHealth.GetComponent<TextMeshProUGUI>();
+        //scoreTxt = textMeshProScore.GetComponent<TextMeshProUGUI>();
+        //healthTxt = textMeshProHealth.GetComponent<TextMeshProUGUI>();
     }
 
     private void Start()
@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
 
         //Player player;
        // healthTxt.text = $"Health:" + player.health;
-        scoreTxt.text = $"Score: {score}";
+        //scoreTxt.text = $"Score: {score}";
 
        // SceneManager.LoadScene("MainMenu");
 
@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
 
-        scoreTxt.text = $"Score: {score}";
+        //scoreTxt.text = $"Score: {score}";
         curretScene = SceneManager.GetActiveScene();
         currentSceneName = curretScene.name;
         /*if (currentSceneName == $"Level{level}")
@@ -79,6 +79,11 @@ public class GameManager : MonoBehaviour
 
 
             }
+
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
         
     }
 
@@ -105,8 +110,7 @@ public class GameManager : MonoBehaviour
 
         if (player.health <= 0)
         {
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.name);
+            SceneManager.LoadScene("Level1");
 
 
         }

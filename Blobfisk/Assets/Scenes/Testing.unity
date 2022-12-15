@@ -273,37 +273,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6064386779241036432, guid: 97d07d856570d474695d23b4b7625fe6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -418298569, guid: c50cdadbd2c317d48802e2631ab7f0f5, type: 3}
-    - target: {fileID: 6064386779241036433, guid: 97d07d856570d474695d23b4b7625fe6, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 6.1566234
-      objectReference: {fileID: 0}
-    - target: {fileID: 6064386779241036433, guid: 97d07d856570d474695d23b4b7625fe6, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 3.2000003
-      objectReference: {fileID: 0}
-    - target: {fileID: 6064386779241036434, guid: 97d07d856570d474695d23b4b7625fe6, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6064386779241036435, guid: 97d07d856570d474695d23b4b7625fe6, type: 3}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6064386779241036435, guid: 97d07d856570d474695d23b4b7625fe6, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5865954
-      objectReference: {fileID: 0}
-    - target: {fileID: 6064386779241036435, guid: 97d07d856570d474695d23b4b7625fe6, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5865954
-      objectReference: {fileID: 0}
-    - target: {fileID: 6064386779241036435, guid: 97d07d856570d474695d23b4b7625fe6, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5865954
       objectReference: {fileID: 0}
     - target: {fileID: 6064386779241036435, guid: 97d07d856570d474695d23b4b7625fe6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -349,8 +321,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: GulperEel
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1928636678158566163, guid: 97d07d856570d474695d23b4b7625fe6, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97d07d856570d474695d23b4b7625fe6, type: 3}
 --- !u!1001 &759223347
 PrefabInstance:
@@ -705,31 +676,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 174c23d292863d54fb662738f46777f2, type: 3}
---- !u!1 &1611873830 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6064386779241036446, guid: 97d07d856570d474695d23b4b7625fe6, type: 3}
-  m_PrefabInstance: {fileID: 696148006}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1611873831
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1611873830}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5345349297d655b478ed1b4a90aa6d73, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &468881108612064049
 PrefabInstance:
   m_ObjectHideFlags: 0
